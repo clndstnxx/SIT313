@@ -1,1 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+    
+        * {
+            box-sizing: border-box;
+        }
 
+        li {
+            display: inline;
+            font-weight: 600;
+        }
+
+        a{
+            margin-right: 20px;
+            margin-left: 15px;
+            /* to remove the underline of each menu */
+            text-decoration: none;
+            color: rgb(49, 136, 242);
+        }
+        h2,h3 {
+            color: rgb(113, 110, 255);
+        } 
+        
+        body, html {
+            height: 100%;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        /* size of the header */
+        .header {
+            width: 100%;
+            height: 80%;
+        }
+
+        /* tech pic  */
+        .background {
+            opacity: 1;
+            width: 100%;
+            height: 100%;
+            transition: .6s;
+        }
+
+        /* before we hover the pic, the text can't be seen */
+        .hover {
+            opacity: 0;
+            text-align: center;
+            margin-top: -100px;
+            color: white;
+        }
+
+        /* the tech pic will be more see-through when we hover over it */
+        .header:hover .background {
+            opacity: 0.2;
+        }
+
+        /* after we hover the pic, we can see the text */
+        .header:hover .hover {
+            opacity: 1;
+        }
+
+        /* column for project pics and their desc side-by-side */
+        .project {
+            float:left;
+            width: 40%;
+            height: 270px;
+        }
+
+        /* image gallery */
+        .image img {
+            width: 99%;
+            height: auto;
+        }
+
+        /* to section the img gallery */
+        .gallery {
+            float:right;
+            width: 25%;
+        }
+
+        /* for responsiveness - if we resize the screen*/
+
+        /* for responsiveness - if we resize the screen, the image gallery will change (2 img per column) */
+        @media screen and (max-width: 1200px) {
+            .gallery {
+            width: 50%;
+            }
+        }
+
+        /* if the user resizes the screen up to 600px, the image gallery will change again (1 img per column) */
+        @media screen and (max-width: 900px) {
+        .project, .gallery {
+            width: 100%;
+            }
+        }
+        </style>
+    </head>
+    
+
+    <body>
+
+    <!-- horizontal navigation menu -->
+    <div style="height: 40px; padding-top: 20px; margin-bottom: 20px;">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </div>
+
+    <div class="header">
+        <img src="tech.jpeg" class="background" style="width:100%">
+          <div class="hover">
+              <!-- making a new div to put the text after we hover the pic -->
+              <div style="height:45px;background-color:gray;font-size:36px;">Hey, I'm Monica</div>
+          </div>
+    </div> <br><br>
+    <!-- rounded image -->
+    <center><img src="monica.png" style="border-radius:50%; width: 15%;  " id="about">
+    <h3>I am a front-end developer and UI/UX designer based in Melbourne, Australia</h3>
+    <!-- separator -->
+    <hr style="width:25%;text-align:center;">
+    <h2 id="work">Here's what I've done so far</h2>
+
+    <br><br>
+
+    <!-- picture of the project -->
+  <div class="project" style="background-color:#fff; padding-left: 300px;">
+    <img src="postcode.png" style="width: 300px; height: 200px; border: 1px solid #000; border-radius: 20px;">
+  </div>
+  <div class="project" style="background-color:rgba(255, 255, 255, 0); padding-left: 200px;">
+    <!-- project title -->
+    <h3>POSTCODE</h3>
+
+    <!-- project link -->
+    <a href="https://drive.google.com/file/d/1nJSgroP8ScMZqCvFIpf29nb0GKCbkrRi/view?usp=sharing">Project Link Github click here</a>
+    
+    <!-- project desc -->
+    <p>POSTCODE is a mobile-based Truck Sharing Application that connects users and the truck driver to send, deliver, and receive packages.</p>
+  </div>
+<br>
+
+<!-- picture of the project -->
+    <div class="project" style="background-color:#fff; padding-left: 300px;">
+    <img src="kiddoit.png" style="width: 300px; height: 200px; border: 1px solid #000; border-radius: 20px;">
+    </div>
+    <div class="project" style="background-color:rgba(255, 255, 255, 0); padding-left: 200px;">
+    <!-- project title -->
+      <h3>KIDDO.IT</h3>
+    
+        <!-- project link -->
+        <a href="https://github.com/monicavalentina/SIT120-portfolio">Project Link Github click here</a>
+
+        <!-- project desc -->
+        <p>KIDDO.IT is a web-based Child Learning Support. The main features of this application are providing engaging and fun materials for children.</p>
+    </div>
+
+    <hr style="width:25%;text-align:center;">
+    <h2>My Photos</h2>
+
+    <!-- image gallery -->
+    <div class="gallery">
+        <div class="image">
+            <img src="kiddo.png">
+        </div>
+      </div>
+      
+      
+      <div class="gallery">
+        <div class="image">
+            <img src="momme.png">
+        </div>
+      </div>
+      
+      <div class="gallery">
+        <div class="image">
+            <img src="captura.png">
+        </div>
+      </div>
+      
+      <div class="gallery">
+        <div class="image">
+            <img src="scoti.png">
+        </div>
+      </div>
+
+    </center>
+    </body>
+<!-- reference:    https://www.w3schools.com/css/css_rwd_grid.asp, https://www.w3schools.com/css/css_image_gallery.asp  -->
+</html> 
