@@ -1,0 +1,26 @@
+
+* {
+    box-sizing: border-box;
+  }
+  
+  
+  .column {
+    float: left;
+    padding: 10px;
+    height: 375px; 
+    text-align:center
+  }
+  
+  .left, .right {
+    width: 25%;
+    background-color:#08848c;
+  }
+  
+  .middle {
+    width: 50%;
+    background-color:#08848c;
+  }
+
+  .logo{
+    font-size:40px;
+  }

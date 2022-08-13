@@ -1,0 +1,18 @@
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top:-30px;
+}
+
+button{
+    border-radius: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    border: none;
+    background-color: rgb(175, 175, 175);
+}
