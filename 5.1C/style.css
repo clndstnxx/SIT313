@@ -1,0 +1,25 @@
+.App {
+    margin-left: 20px;
+  }
+  /* https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-hidden */
+  [aria-hidden="true"] {
+    display: none;
+  }
+
+  .button {
+    border: none;
+    color: white;
+    padding: 10px 60px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    left: 27.4%;
+  }
+
+  .test {
+    width: 32.7%;
+  }
+
+  span{
+    background-color: #D3D3D3;
+  }
